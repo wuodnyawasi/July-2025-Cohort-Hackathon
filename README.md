@@ -7,8 +7,8 @@ This is a modern and responsive personal portfolio website showcasing my skills,
 - IT student with a passion for cybersecurity  
 - Certified in Cybersecurity (ISC²)  
 - OSINT training by Basel Institute of Governance  
-- Experience working at the DCI Digital Forensic Lab  
-- Former law enforcement officer with a focus on digital crime
+- Experience working at Digital Forensic Lab  
+
 
 ## 📁 Project Structure
 /portfolio/
