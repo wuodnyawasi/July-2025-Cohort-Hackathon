@@ -1,0 +1,341 @@
+/* =========================
+   Global Reset & Base Styles
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb; /* soft gray-white */
+  color: #1e293b; /* slate gray text */
+  line-height: 1.6;
+}
+
+/* =========================
+   Header + Navbar
+   ========================= */
+.site-header {
+  background: #14b8a6; /* teal accent */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header h1 {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links li a:hover {
+  opacity: 0.8;
+}
+
+/* =========================
+   Hero Section
+   ========================= */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #14b8a6, #0d9488);
+  color: #fff;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 40vw;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   Buttons
+   ========================= */
+button,
+.bg-button,
+.bg-button-outline {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.bg-button {
+  background: #14b8a6;
+  color: #fff;
+}
+
+.bg-button:hover {
+  background: #0d9488;
+}
+
+.bg-button-outline {
+  background: transparent;
+  border: 2px solid #14b8a6;
+  color: #14b8a6;
+}
+
+.bg-button-outline:hover {
+  background: #14b8a6;
+  color: #fff;
+}
+
+/* =========================
+   Skills Section
+   ========================= */
+.skills-section {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0f172a;
+}
+
+.skills-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-card h3 {
+  margin-bottom: 1rem;
+  color: #14b8a6;
+}
+
+/* =========================
+   Achievements Section
+   ========================= */
+.achievements {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #f1f5f9; /* light slate */
+}
+
+.achievements h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0f172a;
+}
+
+.achievement-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   Background Section
+   ========================= */
+.background-section {
+  padding: 3rem 2rem;
+  background: #fff7ed; /* warm cream */
+}
+
+.background-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ea580c; /* coral accent */
+}
+
+.background-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.bg-left img {
+  width: 120px;
+  height: 120px;
+  margin-right: 2rem;
+}
+
+.bg-right h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #14b8a6;
+}
+
+.bg-right ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   Contact Section
+   ========================= */
+.contact-section {
+  padding: 3rem 2rem;
+  background: #f1f5f9;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0f172a;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #14b8a6;
+  box-shadow: 0 0 4px rgba(20,184,166,0.4);
+}
+
+.contact-form button {
+  background: #14b8a6;
+  color: #fff;
+}
+
+.contact-form button:hover {
+  background: #0d9488;
+}
+
+/* =========================
+   Footer
+   ========================= */
+.site-footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #14b8a6;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Media Queries
+   ========================= */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .background-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bg-left img {
+    margin: 0 0 1rem 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #0f172a;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}

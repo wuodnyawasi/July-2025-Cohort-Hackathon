@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+  <!-- =========================
+       Header
+       ========================= -->
+  <header class="site-header">
+    <h1>My Portfolio</h1>
+    <nav class="navbar" role="navigation">
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =========================
+       Hero Section
+       ========================= -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h2>Hello, I’m Michael 👋</h2>
+      <p>I’m an IT student passionate about cybersecurity, programming, and tech solutions.</p>
+      <button class="bg-button">Explore My Work</button>
+    </div>
+    <div class="hero-image">
+      <img src="../static/images/michael1.jpeg" alt="My Picture">
+    </div>
+  </section>
+
+  <!-- =========================
+       Skills Section
+       ========================= -->
+  <section id="skills" class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-cards">
+      <article class="skill-card">
+        <h3>Programming</h3>
+        <p>Proficient in Java, Python, and Android development.</p>
+      </article>
+      <article class="skill-card">
+        <h3>Cybersecurity</h3>
+        <p>Focused on penetration testing, ethical hacking, and defense strategies.</p>
+      </article>
+      <article class="skill-card">
+        <h3>Web Development</h3>
+        <p>Experience with Flask, HTML, CSS, and responsive design.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- =========================
+       Achievements Section
+       ========================= -->
+  <section id="achievements" class="achievements">
+    <h2>Achievements</h2>
+    <div class="achievements-grid">
+      <article class="achievement-card">
+        <h3>Certified cybersecurity</h3>
+        <p>Completed CEH training and practical labs.</p>
+      </article>
+      <article class="achievement-card">
+        <h3>Open Source Contributor</h3>
+        <p>Contributed to community security projects.</p>
+      </article>
+      <article class="achievement-card">
+        <h3>Dean’s List</h3>
+        <p>Recognized for academic excellence in IT studies.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- =========================
+       Background Section
+       ========================= -->
+  <section id="background" class="background-section">
+    <h2>Background</h2>
+    <div class="background-card">
+      <div class="bg-left">
+        <img src="../static/images/grad.jpeg" alt="Graduate Picture">
+      </div>
+      <div class="bg-right">
+        <h3>Education</h3>
+        <ul>
+          <li>BSc in Information Technology (Ongoing)</li>
+          <li>Diploma in Networking</li>
+          <li>Cybersecurity Bootcamp Graduate</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       Contact Section
+       ========================= -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form class="contact-form" action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="bg-button">Send Message</button>
+    </form>
+  </section>
+
+  <!-- =========================
+       Footer
+       ========================= -->
+  <footer class="site-footer">
+    <p>© 2025 Michael Benjamin. All rights reserved.</p>
+    <p><a href="#hero">Back to top ↑</a></p>
+  </footer>
+
+  <!-- =========================
+       JS Script
+       ========================= -->
+  <script src="../static/js/script.js"></script>
+</body>
+</html>
